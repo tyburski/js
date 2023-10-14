@@ -1,0 +1,25 @@
+#slider-container {
+    width: 300px;
+    overflow: hidden;
+    position: relative;
+  }
+  #slider {
+    display: flex;
+    transition: transform 0.5s;
+  }
+  #slider img {
+    border-radius: 20px;
+    width: 300px;
+    height: auto;
+  }
+  .slider-button {
+    cursor: pointer;
+    margin: 42px;
+  }
+  .slider-button2 {
+    cursor: pointer;
+    margin: 0 25px;
+  }
+  #navigation{
+    margin: 10px 0px;
+  }

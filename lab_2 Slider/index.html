@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body>
+  <div id="slider-container">
+    <div id="slider">
+      <div><img src="https://i.ytimg.com/vi/gOfU8enU1X8/maxresdefault.jpg" alt=""></div>
+      <div><img src="https://a.allegroimg.com/s512/11135d/931b453e441ca15d7d2f7c3ccb19/Ford-Crown-2011-FORD-CROWN-VICTORIA-POLICE-INT" alt=""></div>
+      <div><img src="https://bringatrailer.com/wp-content/uploads/2021/10/2003_ford_crown-victoria_4a0bf0b7-bbf6-4b2c-9b40-5428bd08f088-52735.jpeg" alt=""></div>
+    </div>
+  </div>
+
+  <div id="dots-container">
+    <span class="slider-button" onclick="goToSlide(0)">1</span>
+    <span class="slider-button" onclick="goToSlide(1)">2</span>
+    <span class="slider-button" onclick="goToSlide(2)">3</span>
+  </div> 
+  
+  <div id="navigation">
+    <span class="slider-button2" onclick="prevSlide()">Previous</span>
+
+    <span class="slider-button2" onclick="nextSlide()">Next</span>
+
+    <span class="slider-button2" onclick="toggleAutoSlide()">Start/Stop</span>
+
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>
