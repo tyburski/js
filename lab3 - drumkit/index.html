@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lab3 - drumkit</title>
+</head>
+<style>
+    body{
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    div{
+        padding: 10px;
+    }
+</style>
+<body>
+    <audio src="./sounds/clap.wav" id="s1"></audio>
+    <audio src="./sounds/hihat.wav" id="s2"></audio>
+    <audio src="./sounds/snare.wav" id="s3"></audio>
+    <audio src="./sounds/tom.wav" id="s4"></audio>
+    <div>
+        <h6>
+            'a' clap.wav
+        </h6>
+        <h6>
+            'b' hithat.wav
+        </h6>
+        <h6>
+            'd' snare.wav
+        </h6>
+        <h6>
+            'f' tom.wav
+        </h6>
+    </div>
+    <div>
+        <label for="channelSelect">Wybierz kanał do nagrywania: </label>
+        <select id="channelSelect">
+            <option value="0">Kanał 1</option>
+            <option value="1">Kanał 2</option>
+            <option value="2">Kanał 3</option>
+            <option value="3">Kanał 4</option>
+        </select>   
+        <button id="recordingButton">Nagrywanie</button>
+    </div>
+      
+    <div>
+        <label for="playChannelSelect">Wybierz kanał do odtworzenia: </label>
+        <select id="playChannelSelect">
+            <option value="0">Kanał 1</option>
+            <option value="1">Kanał 2</option>
+            <option value="2">Kanał 3</option>
+            <option value="3">Kanał 4</option>
+        </select>
+    
+        <button onclick="playSelectedChannel()">Odtwórz kanał</button>
+    </div>
+
+    <div>
+        <button onclick="playAllChannels()">Odtwórz całość</button>
+        <button onclick="stopAllChannels()">Zatrzymaj</button>
+    </div>
+    <script src="drumkit.js"></script>
+</body>
+</html>
