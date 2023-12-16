@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>lab4 - notekeep</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="app">
+    <h1>Notatki</h1>
+    <div id="note-form">
+      <input type="text" id="title" placeholder="Tytuł">
+      <textarea id="content" placeholder="Treść"></textarea>
+      <select id="color">
+        <option value="yellow">Żółty</option>
+        <option value="pink">Różowy</option>
+        <option value="blue">Niebieski</option>
+      </select>
+      <label for="pin">Przypnij: <input type="checkbox" id="pin"></label>
+      <button onclick="addNote()">Dodaj notatkę</button>
+    </div>
+    <div id="notes-list"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
