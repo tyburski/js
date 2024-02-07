@@ -1,0 +1,45 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+  }
+  
+  #app {
+    max-width: 1000px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  #location-form {
+    margin-bottom: 20px;
+  }
+  
+  #locations-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .location {
+    width: 200px;
+    margin: 10px;
+    padding: 10px;
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    position: relative;
+  }
+  
+  .delete-btn {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    cursor: pointer;
+    background-color: #ff4d4d;
+    color: #fff;
+    border: none;
+    padding: 5px;
+    border-radius: 3px;
+  }
+  
